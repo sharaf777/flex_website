@@ -29,8 +29,8 @@ header{
 
 .website-header img{
 	float: left;
-	width: 150px;
-	height: 70px;	
+	width: 200px;
+	height: 80px;	
 	margin: 0 30px;
 }
 
@@ -151,16 +151,27 @@ p{
 }
 
 /* Host Section */
-
-.news-container:hover > .carousel-text{
-	bottom: 10px;
+.news-container{
+	margin-top: 10px;
+	height: 200px;
 }
+
 .news-container:hover > a{
 	filter: brightness(0.4);
 }
 .news-container img{
 	width: 100%;
-	height: 50%;
+	height: 100%;
+}
+.news-container video{
+	height: 200px;
+	width: 1350px;
+}
+.news-container p{
+		text-align: left;
+		font-size: 24px;
+		left: 590px;
+		top: 80px;
 }
 
 /* sponsors */
@@ -203,7 +214,7 @@ p{
   .sponsors .card:hover {
 	transform: translateY(-15px);
   }
-  .sponsors:nth-child(4) > p:nth-child(1) {
+  .sponsors p{
 	text-align: center;
 	font-size: 36px;
 	background-blend-mode: normal;
