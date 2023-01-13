@@ -1,5 +1,3 @@
-
-
 body{
 	padding: 0;
 	margin: 0;
@@ -246,6 +244,69 @@ p{
 	padding: 5px;
 	text-align: center;
 }
+
+
+/* Gallery*/
+.gallerycontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+  }
+  
+  .gallerycontainer .galleryheading{
+	width: 50%;
+	padding-bottom: 50px;
+  }
+  .gallerycontainer .galleryheading h3{
+	font-size: 3em;
+	font-weight: bolder;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #222;
+  }
+  
+  .gallerycontainer .galleryheading h3 span{
+	font-weight: 100;
+  }
+  .gallerycontainer .gallerybox{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  .gallerycontainer .gallerybox .dream{
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+  }
+  
+  .gallerycontainer .gallerybox .dream img{
+	width: 100%;
+	padding-bottom: 15px;
+	border-radius: 5px;
+  }
+  
+  .gallerycontainer .btn{
+	margin: 40px 0 70px 0;
+	background: #222;
+	padding: 15px 40px ;
+	border-radius: 5px;
+  }
+  
+  .gallerycontainer .btn a{
+   color: #fff;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+  }
+  
+ 
+
+
+
 @media only screen and (max-width: 600px) {
 	.info-section{	
 		padding: 10px;
@@ -283,3 +344,26 @@ p{
 		z-index: 16;
 	}
 }
+@media only screen and (max-width: 769px){
+	.gallerycontainer .gallerybox{
+   flex-direction: column;
+  }
+
+.gallerycontainer .gallerybox .dream{
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 643px){
+.gallerycontainer .galleryheading{
+  width: 100%;
+}
+.gallerycontainer .galleryheading h3{
+  font-size: 1em;
+
+}
+
+}
+
+
