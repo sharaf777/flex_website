@@ -1,207 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Flex card</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- https://somuwebd.blogspot.com -->
-</head>
-<style>
-    *,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    background-color: #30303040;
-    line-height: 1.4;
-    font-family: 'Raleway';
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-.cards>* {
-    flex-grow: 1;
-    flex-basis: calc((600px - 100%)*999);
-    min-width: 280px;
-    max-width: 330px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    color: #000;
-    background-color: #fff;
-    font-size: 1rem;
-    border-radius: 0.45rem;
-    overflow: hidden;
-    box-shadow: 2px 2px 15px rgba(40, 40, 50, 0.4);
-}
-
-@media(max-width: 715px) {
-    .card {
-        max-width: 460px;
-        flex-direction: row;
-    }
-}
-
-
-
-
-
-.card_image {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex: 0 0 160px;
-}
-
-.card_image img {
-    position: relative;
-    width: 100%;
-    min-height: 220px;
-}
-
-.card_content {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card_title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.card_text {
-    font-size: 1.1rem;
-    margin-bottom: 1em;
-}
-
-.card_readmore {
-    position: relative;
-    margin-bottom: 0.5em;
-    text-decoration: none;
-    padding: 0.45em 1.05em;
-    display: inline-flex;
-    color: #fff;
-    background: linear-gradient(-34deg, #8989ff, 50%, plum);
-    box-shadow: 0 0.5em 1.2rem #0004;
-    border-radius: 0.5em;
-}
-</style>
-
+    <head>
+        <title>ICACIE Keynotes Speakers</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body style="background:rgb(84, 198, 211) ;">
+      <div class="header" style="background: rgb(84, 198, 211);">
+        <div class="container">
+    
+          <div class="navbar">
+    
+    
+            <nav>
+              
+              <ul id="MenuItems">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Call for Papers</a></li>
+                <li><a class="nav-link"  style="color: brown;" href="keynotes.html">Keynotes/Speakers</a></li>
+                <li><a class="nav-link" href="#">Committee Members</a></li>
+                <li><a class="nav-link" href="#">Travel</a></li>
+                <li><a class="nav-link"href="gallery.html" >Previous Conferences</a></li>
+                <li><a class="nav-link" href="#">Registration</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>							
+              </ul>
+            </nav>
+    
+          </div>
+        </div>
+      </div>
 <body>
-    <section class="cards">
-        <div class="card">
-            <div class="card_image">
-                <img src="https://i.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU"
-                    alt="">
+    <div class="keynotescontainer">
+    <div class="keynotesheading">
+        <h3>Keynotes Speakers</h3>
+      </div>
+    <section class="keynotescards">
+        <div class="keynotescard">
+            <div class="keynotescard_image">
+                <img src="images/kn1.jpeg">
             </div>
-            <div class="card_content">
-                <div class="card_title">
-                    Responsive Flex Card In CSS!
+            <div class="keynotescard_content">
+                <div class="keynotescard_title">
+                    Dr Binod Kumar
                 </div>
-                <div class="card_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias accusantium
+                <div class="keynotescard_text">
+                    Professor <br> Department of Computer Science and Engineering,
+                    Siksha O Anusandhan University,
+                    Bhubaneshwar, India
                 </div>
-                <a href="#" class="card_readmore">Read More</a>
+                <a href="#" class="keynotescard_readmore">Speaker's Bio</a>
             </div>
         </div>
 
-        <div class="card">
-            <div class="card_image">
-                <img src="https://i.picsum.photos/id/416/1280/853.jpg?hmac=B9Bc5K0QP3GbA6b2Dsfmjm_YpNCOlB_5zm6ZCXUnoHw"
-                    alt="">
+        <div class="keynotescard">
+            <div class="keynotescard_image">
+                <img src="images/kn2.jpeg">
             </div>
-            <div class="card_content">
-                <div class="card_title">
-                    Responsive Flex Card In CSS!
+            <div class="keynotescard_content">
+                <div class="keynotescard_title">
+                    Mr Amic Seeven
                 </div>
-                <div class="card_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias accusantium
+                <div class="keynotescard_text">
+                    Senior Lecturer at Universite des Mascareignes
                 </div>
-                <a href="#" class="card_readmore">Read More</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card_image">
-                <img src="https://i.picsum.photos/id/1063/4867/3215.jpg?hmac=-ksdmOruOUma2z6ENQo9Yqp9T7lsnokLo8SFfAt-UNU"
-                    alt="">
-            </div>
-            <div class="card_content">
-                <div class="card_title">
-                    Responsive Flex Card In CSS!
-                </div>
-                <div class="card_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias accusantium
-                </div>
-                <a href="#" class="card_readmore">Read More</a>
+                <a href="#" class="keynotescard_readmore">Speaker's Bio</a>
             </div>
         </div>
-        <div class="card">
-            <div class="card_image">
-                <img src="https://i.picsum.photos/id/227/1024/683.jpg?hmac=63Bm3-6abEba_BO4lpAKdrnmSL04wZpwK17xue1mCXw"
-                    alt="">
+        <div class="keynotescard">
+            <div class="keynotescard_image">
+                <img src="images/kn3.jpeg">
             </div>
-            <div class="card_content">
-                <div class="card_title">
-                    Responsive Flex Card In CSS!
+            <div class="keynotescard_content">
+                <div class="keynotescard_title">
+                    Dr Radhakrishna Somanah
                 </div>
-                <div class="card_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias accusantium
+                <div class="keynotescard_text">
+                    Director-General<br> Université des Mascareignes
                 </div>
-                <a href="#" class="card_readmore">Read More</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card_image">
-                <img src="https://i.picsum.photos/id/412/7360/4912.jpg?hmac=dubFBADU6F0oiMSaPGLhcOk7wMV86JpXAgLY1ZkK8fw"
-                    alt="">
-            </div>
-            <div class="card_content">
-                <div class="card_title">
-                    Responsive Flex Card In CSS!
-                </div>
-                <div class="card_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias accusantium
-                    sed dignissimos nobis corporis laudantium vero doloribus
-                </div>
-                <a href="#" class="card_readmore">Read More</a>
+                <a href="#" class="keynotescard_readmore">Speaker's Bio</a>
             </div>
         </div>
-        <div class="card">
-            <div class="card_image">
-                <img src="https://i.picsum.photos/id/411/5183/2444.jpg?hmac=84Rb7FV31ExwFZ5l0fIaubSUVG9Ivrs51Tr6edx1BY8"
-                    alt="">
-            </div>
-            <div class="card_content">
-                <div class="card_title">
-                    Responsive Flex Card In CSS!
-                </div>
-                <div class="card_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias accusantium
-                </div>
-                <a href="#" class="card_readmore">Read More</a>
-            </div>
-        </div>
+    </div>
     </section>
 </body>
 

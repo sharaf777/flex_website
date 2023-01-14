@@ -284,19 +284,19 @@ p{
 	background-color: rgb(35, 31, 32);
   }
   
-  .gallerycontainer .galleryheading{
+  .galleryheading{
 	width: 50%;
 	padding-bottom: 50px;
 	color: #e08b6c;
   }
-  .gallerycontainer .galleryheading h3{
+  .galleryheading h3{
 	font-size: 3em;
 	font-weight: bolder;
 	padding-bottom: 10px;
 	border-bottom: 3px solid purple;
   }
   
-  .gallerycontainer .galleryheading h3 span{
+  .galleryheading h3 span{
 	font-weight: 100;
   }
   .gallerycontainer .gallerybox{
@@ -317,33 +317,87 @@ p{
 	border-radius: 5px;
   }
   
-  @media only screen and (max-width:800px){
-    nav ul{
-        position:absolute;
-        top:70px;
-        left:0;
-        background:#333;
-        width:100%;
-        overflow:hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li{
-        display:block;
-        margin-right:50px;
-        margin-top:10px;
-        margin-bottom:10px;
-    }
-    nav ul li a{
-        color:#fff;
-    }
-    .menu-icon{
-        display:block;
-        cursor:pointer;
-    }
 
+
+/*Keynotes*/
+.keynotescards {
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
-  
+.keynotescards>* {
+    flex-grow: 1;
+    flex-basis: 50%;
+    min-width: 280px;
+    max-width: 330px;
+}
+
+.keynotescard {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 0.45rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px rgba(40, 40, 50, 0.4);
+}
+
+.keynotescard_image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex: 0 0 160px;
+}
+
+.keynotescard_image img {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+}
+
+.keynotescard_content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keynotescard_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.keynotescard_text {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.keynotescard_readmore {
+    position: relative;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    padding: 0.45em 1.05em;
+    display: inline-flex;
+    color: #fff;
+    background: linear-gradient(-34deg, #8989ff, 50%, plum);
+    box-shadow: 0 0.5em 1.2rem #0004;
+    border-radius: 0.5em;
+}
+.keynotesheading{
+	padding-top: 30px;
+	padding-bottom: 50px;
+	color: black;
+	text-align: center;
+  }
+
+
+/*Home*/  
 @media only screen and (max-width:800px){
     nav ul{
         position:absolute;
@@ -370,9 +424,31 @@ p{
 
 }
 
+@media only screen and (max-width:800px){
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        background:#333;
+        width:100%;
+        overflow:hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin-right:50px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+        color:#fff;
+    }
+    .menu-icon{
+        display:block;
+        cursor:pointer;
+    }
 
-
-
+}
 @media only screen and (max-width: 600px) {
 	.info-section{	
 		padding: 10px;
@@ -410,6 +486,8 @@ p{
 		z-index: 16;
 	}
 }
+
+/*Previous Conference*/
 @media only screen and (max-width: 769px){
 	.gallerycontainer .gallerybox{
    flex-direction: column;
@@ -422,14 +500,18 @@ p{
 }
 
 @media only screen and (max-width: 643px){
-.gallerycontainer .galleryheading{
+.galleryheading{
   width: 100%;
 }
-.gallerycontainer .galleryheading h3{
+.galleryheading h3{
   font-size: 1em;
-
 }
 
 }
 
-
+/*Keynotes*/
+@media(max-width: 460px) {
+    .keynotescard {
+        flex-direction: column;
+    }
+}
