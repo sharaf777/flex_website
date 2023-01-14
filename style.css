@@ -4,6 +4,7 @@ body{
 	box-sizing:border-box;
 }
 /*Header*/
+
 .box{
     margin:auto;
     width:300px;
@@ -14,28 +15,16 @@ body{
     align-items:center;
     padding:30px;
 }
-.box > i {
-    
-    font-size:20ppx;
-    color:#777;
-}
-.box > input{
-    background-color: silver;
-    flex:1;
-    height:40px;
-    border:none;
-    outline:none;
-    font-size:18px;
-    padding-left:10px;
-}
+
+
 .navbar{
     display:flex;
-    align-items:center;
+    align-items:left;
     padding:5px;
 }
 nav{
     flex:1;
-    text-align:right;
+    text-align:center;
 }
 nav ul{
     display:inline-block;
@@ -44,7 +33,7 @@ nav ul{
 nav ul li{
     display:inline-block;
     margin-right:0px;
-	font-size: 14x;
+	font-size: 14px;
 	font-weight: bold;
 }
 a{
@@ -77,7 +66,15 @@ a{
     font-size:50px;
     line-height:60px;
     margin:25px 0;
+	text-align: justify;
+	width: 320px;
 }
+.col-2 p{
+	font-size: 18px;
+	width: 330px;
+	text-align: center;
+	font-weight: bold;
+   }
 .btn{
     display: inline-block;
     background:#c300ff;
@@ -91,7 +88,7 @@ a{
     background:#563434;
 }
 .header{
-    background:radial-gradient(#fff,rgb(0,125,190));
+    background:radial-gradient(#fff,rgb(0,88,138));
 }
 .header .row{
     margin-top:70px;
