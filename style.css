@@ -1,79 +1,110 @@
 body{
 	padding: 0;
 	margin: 0;
+	box-sizing:border-box;
 }
-header{	
-	background-color: rgb(0, 88, 138);
-	color: white;
+/*Header*/
+.box{
+    margin:auto;
+    width:300px;
+    height:50px;
+    background-color:silver;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding:30px;
 }
-.website-header:nth-child(1) > p:nth-child(2) {
-	text-align: center;
-	justify-content: center;
-	font-size: 40px;
-   }
-   
-   .website-header:nth-child(1) > p:nth-child(3) {
-	text-align: center;
-	justify-content: center;
-	font-size: 24px;
-   }
-
-   .website-header:nth-child(1) > p:nth-child(4) {
-	text-align: center;
-	justify-content: center;
-	font-size: 18px;
-   }
-
-
-.website-header img{
-	float: left;
-	width: 200px;
-	height: 80px;	
-	margin: 0 30px;
+.box > i {
+    
+    font-size:20ppx;
+    color:#777;
 }
-
+.box > input{
+    background-color: silver;
+    flex:1;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:18px;
+    padding-left:10px;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:5px;
+}
 nav{
-	background-color: rgb(0, 88, 138);
-	height: 50px;
-	margin-bottom: 20px;
+    flex:1;
+    text-align:right;
 }
 nav ul{
-	margin: 20px 0 0 0;
+    display:inline-block;
+    list-style-type:none;
 }
-.navbar-nav li{
-	list-style: none;
-	display: inline-block;
-	padding: 10px 20px;
+nav ul li{
+    display:inline-block;
+    margin-right:0px;
+	font-size: 14x;
+	font-weight: bold;
 }
-.navbar-nav li a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-}
-.navbar-nav li a:hover{
-	color:#e08b6c;
-}
-.info-section{
-	padding: 0 30px 0 60px;
-	display: flex;
+a{
+    text-decoration:none;
+    color:#fff;
 }
 
-.info{
-	padding: 30px;
-	color: #fff;
-	text-decoration: none;	
-	font-weight: 800;
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
 }
-.info:hover,.social-icons i:hover{
-	color:#e08b6c;
-	cursor: pointer;
+.container .input{
+    border:0;
+    outline:none;
+    color:#000;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size:50px;
+    line-height:60px;
+    margin:25px 0;
+}
+.btn{
+    display: inline-block;
+    background:#c300ff;
+    color:#fff;
+    padding:8px 30px;
+    margin:30px 0;
+    border-radius:30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background:#563434;
+}
+.header{
+    background:radial-gradient(#fff,rgb(0,125,190));
+}
+.header .row{
+    margin-top:70px;
+}
+.categories{
+    margin:70px 0;
 }
 
+/*Main*/
 
 #featured{
 	flex: 2;
 }
-
 
 .carousel, .news-container{
 	position: relative;
@@ -253,18 +284,19 @@ p{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin: 40px 20px 0 20px;
+	background-color: rgb(35, 31, 32);
   }
   
   .gallerycontainer .galleryheading{
 	width: 50%;
 	padding-bottom: 50px;
+	color: #e08b6c;
   }
   .gallerycontainer .galleryheading h3{
 	font-size: 3em;
 	font-weight: bolder;
 	padding-bottom: 10px;
-	border-bottom: 3px solid #222;
+	border-bottom: 3px solid purple;
   }
   
   .gallerycontainer .galleryheading h3 span{
@@ -288,22 +320,59 @@ p{
 	border-radius: 5px;
   }
   
-  .gallerycontainer .btn{
-	margin: 40px 0 70px 0;
-	background: #222;
-	padding: 15px 40px ;
-	border-radius: 5px;
-  }
+  @media only screen and (max-width:800px){
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        background:#333;
+        width:100%;
+        overflow:hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin-right:50px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+        color:#fff;
+    }
+    .menu-icon{
+        display:block;
+        cursor:pointer;
+    }
+
+}
+
   
-  .gallerycontainer .btn a{
-   color: #fff;
-   font-size: 1.2em;
-   text-decoration: none;
-   font-weight: bolder;
-   letter-spacing: 3px;
-  }
-  
- 
+@media only screen and (max-width:800px){
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        background:#333;
+        width:100%;
+        overflow:hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin-right:50px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+        color:#fff;
+    }
+    .menu-icon{
+        display:block;
+        cursor:pointer;
+    }
+
+}
+
 
 
 
