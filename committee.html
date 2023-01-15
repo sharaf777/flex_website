@@ -9,49 +9,7 @@
 <head>
 
   <style>
-    .hiddenimg {
-  display: none;
-}
 
-.hiddentxt {
-  font-weight: bold;
-  color: #F00;
-  z-index:99;
-}
-
-.hiddentxt a {
-  color: #F00;
-  text-decoration: none;
-  z-index: 99;
-}
-
-.hiddenclick {
-  font-weight: bold;
-  color: #F00;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.hiddenclick a {
-  color: #F00;
-  text-decoration: none;
-}
-
-.hiddenclick a:visited {
-  color: #F00;
-  text-decoration: none;
-}
-
-.hiddentxt:hover ~ .hiddenimg {
-  display: block;
-  position: absolute;
-    z-index: 2
-}
-
-.hiddenclickimg {
-  display: none;
-
-}
   </style>
   <body style="background:rgb(84, 198, 211) ;">
     <div class="header" style="background: rgb(84, 198, 211);">
@@ -78,13 +36,35 @@
         </div>
       </div>
     </div>
-    <div class="keynotesheading">
-        <h3>Organising Committee</h3>
-      </div>
-    <p>
-      <span class="hiddentxt">banana</a></span><span class="hiddenimg"><img src="images/carousel1.jpg" width="250" /></span>
-    </p>
-
+    <div class="committeecontainer">
+        <div class="keynotesheading">
+            <h3>Committee Members</h3>
+        </div>
+        <div class="listcontainer">
+            <h2>Organising Committee</h2>
+            <ul class="lists"> 
+        <li><span class="hiddentxt">Swaleha Peeroo, Université des Mascareignes, Mauritius (Chair)</a></span><span class="hiddenimg"><img src="images/peeroo.jpeg" width="250" height="250" /></span></li>
+        <li><span class="hiddentxt">Radhakrishna Somanah, Université des Mascareignes, Mauritius</a></span><span class="hiddenimg"><img src="images/cm1.jpeg" width="250"height="250" /></span></li>
+        <li><span class="hiddentxt">Reza Hosenkhan, Université des Mascareignes, Mauritius</a></span><span class="hiddenimg"><img src="images/cm2.jpeg" width="250"height="250" /></span></li>
+        <li><span class="hiddentxt">Sanjeev K Cowlessur, Université des Mascareignes, Mauritius</a></span><span class="hiddenimg"><img src="images/cm3.jpeg" width="250"height="250" /></span></li>
+            </ul>
+        </div><br>
+        <div class="listcontainer">
+            <h2>Website Committee</h2>
+            <ul class="lists"> 
+        <li><span class="hiddentxt">Sanjeev K Cowlessur, Université des Mascareignes, Mauritius(Chair)</a></span><span class="hiddenimg"><img src="images/cm3.jpeg" width="250" height="250"/></span></li>
+        <li><span class="hiddentxt">Seeven Amic, Université des Mascareignes, Mauritius</a></span><span class="hiddenimg"><img src="images/kn2.jpeg" width="250"height="250" /></span></li>
+        <li><span class="hiddentxt">Deojeet Nohur, Université des Mascareignes, Mauritius</a></span><span class="hiddenimg"><img src="images/nohur.jpeg" width="250"height="250" /></span></li>
+            </ul>
+        </div><br>
+        <div class="listcontainer">
+            <h2>Publicity and Sponsorship Committee</h2>
+            <ul class="lists"> 
+        <li><span class="hiddentxt">Priyanta Ramtohul, Université des Mascareignes, Mauritius (Chair)</a></span><span class="hiddenimg"><img src="images/" width="250"height="250" /></span></li>
+        <li><span class="hiddentxt">Seeven Amic, Université des Mascareignes, Mauritius</a></span><span class="hiddenimg"><img src="images/kn2.jpeg" width="250"height="250" /></span></li>
+            </ul>
+        </div><br>
+    </div>
 
   </body>
 <script>
@@ -98,3 +78,5 @@ function toggleImage() {
 };
 </script>
 </html>
+<style>
+

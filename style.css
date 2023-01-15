@@ -316,8 +316,6 @@ p{
 	padding-bottom: 15px;
 	border-radius: 5px;
   }
-  
-
 
 /*Keynotes*/
 .keynotescards {
@@ -408,6 +406,71 @@ p{
     left:50%;
     transform:translateX(-50%);
 }
+
+/*Committee*/
+.committeecontainer {
+	text-align: center;
+	width: 50%;
+	left: 25%;
+	position: relative;
+	margin: 20px;
+	background-color: antiquewhite;
+	box-shadow: 10px 10px 5px black;
+  }
+
+  .listcontainer{
+	text-align: center;
+	
+  }
+
+  .lists {
+	display: inline-block;
+	text-align: left;
+  }
+.hiddenimg {
+	display: none;
+  }
+  
+  .hiddentxt {
+	font-weight: bold;
+	color: #F00;
+	z-index:99;
+  }
+  
+  .hiddentxt a {
+	color: #F00;
+	text-decoration: none;
+	z-index: 99;
+  }
+  
+  .hiddenclick {
+	font-weight: bold;
+	color: #F00;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  .hiddenclick a {
+	color: #F00;
+	text-decoration: none;
+  }
+  
+  .hiddenclick a:visited {
+	color: #F00;
+	text-decoration: none;
+  }
+  
+  .hiddentxt:hover ~ .hiddenimg {
+	display: block;
+	position: absolute;
+	  z-index: 2
+  }
+  
+  .hiddenclickimg {
+	display: none;
+  
+  }
+
 
 
 /*Home*/  
