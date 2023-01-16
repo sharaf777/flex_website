@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+
+
+.title{
+  display: flex;
+}
+
+.title .left-side{
+  width: 30%;
+  background: #49FCD4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.title .right-side{
+  width: 70%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.title .right-side p{
+  width: 500px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.title .right-side p span{
+  font-weight: 600;
+}
+
+.contactcontainer{
+  display: flex;
+}
+
+.contactcontainer .left-side{
+  width: 30%;
+  background: #49FCD4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.contactcontainer .left-side .item{
+  margin-bottom: 55px;
+}
+
+.contactcontainer .left-side .item h3{
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.contactcontainer .left-side .item > a{
+  border-bottom: 1px dotted black;
+  font-size: 18px;
+}
+
+.contactcontainer .left-side .item span{
+  font-size: 18px;
+}
+
+.contactcontainer .left-side .item .icons a{
+  padding: 0px 0px 0px 30px;
+  font-size: 24px;
+}
+
+.contactcontainer .right-side{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactcontainer .right-side .top{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contactcontainer .right-side .top input{
+  width: 45%;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #E3E3E3;
+  outline-color: lightgreen;
+  border-radius: 5px;
+}
+
+.contactcontainer .right-side textarea{
+  width: 100%;
+  font-size: 20px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid #E3E3E3;
+  outline-color: lightgreen;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.contactcontainer .right-side button{
+  background: #49FCD4;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px){
+  .title{
+    flex-direction: column;
+  }
+  .title .left-side{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 40px 0px 40px 40px;
+  }
+  .title .right-side{
+    width: 100%;
+    padding: 50px 0px 30px 0px;
+  }
+  .contactcontainer{
+    flex-direction: column-reverse;
+  }
+  .title .right-side p{
+    width: 90%;
+  }
+  .contactcontainer .right-side{
+    width: 100%;
+  }
+  .contactcontainer .right-side form{
+    width: 90%;
+  }
+  .contactcontainer .right-side .top{
+    width: 100%;
+  }
+  .contactcontainer .right-side .top input{
+    width: 49%;
+  }
+  .contactcontainer .left-side{
+    width: 90%;
+    text-align: left;
+    align-items: flex-start;
+    margin: auto;
+    padding: 60px 0px 0px 0px;
+    background: none;
+  }
+  .contactcontainer .left-side .item{
+    margin-bottom: 50px;
+  }
+  .contactcontainer .left-side .item .icons a{
+    padding: 0px 20px 15px 0px;
+  }
+}
+
+@media (max-width: 520px){
+  .contactcontainer .right-side .top{
+    flex-direction: column;
+    height: 110px;
+    margin-bottom: 10px;
+  }
+  .contactcontainer .right-side .top input{
+    width: 100%;
+  }
+  .contactcontainer .right-side textarea{
+    margin-bottom: 10px;
+  }
+}
+
+  </style>
+  <body>
+    <div class="header" style="background: rgb(84, 198, 211);">
+        <div class="container">
+    
+          <div class="navbar">
+    
+    
+            <nav>
+              
+              <ul id="MenuItems">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Call for Papers</a></li>
+                <li><a class="nav-link"  style="color: brown;" href="keynotes.html">Keynotes/Speakers</a></li>
+                <li><a class="nav-link" href="#">Committee Members</a></li>
+                <li><a class="nav-link" href="#">Travel</a></li>
+                <li><a class="nav-link"href="gallery.html" >Previous Conferences</a></li>
+                <li><a class="nav-link" href="#">Registration</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>		
+                <li><a class="nav-link" href="#">Login/Sign Up</a></li>							
+              </ul>
+            </nav>
+    
+          </div>
+        </div>
+      </div>
+    <div class="title">
+      <div class="left-side">
+        <h2>GET IN TOUCH</h2>
+      </div>
+      <div class="right-side">
+        <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Quas iure nulla quasi nesciunt consequatur nihil debitis nostrum at expedita, odio.</p>
+      </div>
+    </div>
+
+    <div class="contactcontainer">
+      <div class="left-side">
+        <div class="item">
+          <h3>EMAIL</h3>
+          <a href="">information@untitled.ext</a>
+        </div>
+        <div class="item">
+          <h3>PHONE</h3>
+          <a href="">(000) 000-0000</a>
+        </div>
+        <div class="item">
+          <h3>ADDRESS</h3>
+          <span>123 Somewhere Road, Nashville, TN 000</span>
+        </div>
+        <div class="item">
+          <h3>ELSEWHERE</h3>
+          <div class="icons">
+            <a href="" class = "fa fa-twitter"></a>
+            <a href="" class = "fa fa-instagram"></a>
+            <a href="" class = "fa fa-facebook"></a>
+            <a href="" class = "fa fa-whatsapp"></a>
+            <a href="" class = "fa fa-codepen"></a>
+            <a href="" class = "fa fa-github"></a>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <form action="" method = "post">
+          <div class="top">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="top">
+            <input type="text" placeholder="Designation/Affiliation">
+            <input type="text" placeholder="Company Name">
+          </div>
+          <textarea name="name"placeholder="Message"></textarea>
+          <button type = "submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
