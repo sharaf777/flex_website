@@ -777,9 +777,158 @@ p{
   cursor: pointer;
 }
 
+/*Travel*/
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.small-container{
+  max-width:1080px;
+  margin:auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4{
+  flex-basis:25%;
+  padding:10px;
+  min-width:200px;
+  margin-bottom:50px;
+  transition:transform 0.5s;
+}
+.col-4 img{
+  width:100%;
+}
+.small-container .title{
+  text-align:center;
+  margin:0 auto 80px;
+  position:relative;
+  line-height:60px;
+  color:#555;
+}
+.small-container .title::after{
+  content:'';
+  background:#c300ff;
+  width:80px;
+  height:5px;
+  border-radius:5px;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+.small-container h4{
+  color:#555;
+  font-weight:normal;
+}
+.col-4:hover{
+  transform:translateY(-5px);
+}
 
+:root{
+	--bg-color: #fff;
+	--text-color: #221314;
+	--second-color: #5a7184;
+	--main-color: #6e54fa;
+	--big-font: 6rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+section{
+	padding: 80px 18%;
+}
+.package-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	margin-top: 5rem;
+}
+.thum{
+	position: relative;
+	transition: all .3s cubic-bezier(.445,.05,.55,.95);
+	will-change: filter;
+	cursor: pointer;
+}
+.thum img{
+	width: 100%;
+	height: auto;
+}
+.thum h3{
+	position: absolute;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: right;
+	color: var(--bg-color);
+	top: 36px;
+	right: 40px;
+}
+.dest-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 24px;
+}
+.stars i{
+	color: var(--main-color);
+	font-size: 20px;
+}
+.thum:hover{
+	filter: brightness(100%) hue-rotate(45deg);
+	transform: scale(1.04);
+}
+.location h4{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.location p{
+	font-size: 15px;
+	color: var(--second-color);
+}
 
-
+.destination-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	margin-top: 5rem;
+}
+.col-content{
+	position: relative;
+}
+.col-content img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 15px;
+	filter: brightness(80%);
+	transition: all .3s cubic-bezier(.495,.05,.55,.95);
+	will-change: filter;
+}
+.col-content h5{
+	position: absolute;
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--bg-color);
+	left: 15px;
+	bottom: 60px;
+}
+.col-content p{
+	position: absolute;
+	font-size: 15px;
+	color: var(--bg-color);
+	left: 15px;
+	bottom: 30px;
+	letter-spacing: 2px;
+}
+.col-content img:hover{
+	filter: brightness(100%);
+	transform: scale(1.04);
+	cursor: pointer;
+}
 
 
 
@@ -1031,3 +1180,6 @@ p{
     bottom: -5.5rem;
   }
 }
+
+
+
