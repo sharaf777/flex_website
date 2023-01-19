@@ -12,18 +12,16 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
+    
 
 
-</style>
+   </style>
 <body>
 	<!--header--->
-    <div class="header">
+    <div class="header" style="background: black;">
         <div class="container">
 
             <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" width="100px"></a>
-                </div>
 
                 <nav>
                     
@@ -43,15 +41,6 @@
                 </nav>
 
             </div>
-
-        <div class="row">
-            <div class="col-2">
-                <h1>Université des Mascareignes </h1>
-                <p>International Conference on Advanced Computing and Intelligent Engineering [ICACIE 2023]<br> 29-30 July 2023</p>
-                <a href="gallery.html" class="btn">Explore Now &#8594;</a>
-            </div>
-
-        </div>
         </div>
     </div>
 
@@ -61,7 +50,7 @@
         <h2 class="title">Start your journey with lots of services</h2>
         <div class="row">
             <div class="col-4">
-              <a href=""><img src="images/travel.png"></a>  
+              <a href="#travel"><img src="images/travel.png"></a>  
                 <h4>Travel</h4>
             </div>
 
@@ -77,7 +66,86 @@
         </div>
     </div>
         
+	<!--Travel section--->
+    <section class="travel" id="travel">
+        <div class="travelcontainer">
+            <div class="title">
+                <h2>Travel</h2>
+            </div>
+           <div class="travelrow">
+              <div class="service-travelitems">
+                  <div class="travelrow">
+                     <!-- travelitem start -->
+                     <div class="travelitem">
+                        <div class="travelitem-inner">
+                           <h3>IMPORTANT TRAVEL INFORMATION</h3>
+                           <p>Regardless of vaccination status, travellers do not need to present a negative PCR test before flying to Mauritius.
+                             Travellers do not need to test on arrival or self-isolate.</p>
+                           <div class="read-more-cont">
+                              <h4>Travel restrictions valid up to 30 Sep 2022</h4>
+                              <ol>
+                                <li>Filling of the All-in-One Travel Form is recommended prior to boarding - but is not mandatory for boarding.</li>
+                                <li>Wearing a surgical or N95/FFP2 mask during the flight is mandatory.</li>
+                                <li>Wearing of mask at the airport is mandatory.</li>
+                                <li>Any person having been tested Covid-19 positive within 7 days of departure shall not be allowed to board a flight to Mauritius.</li>
+                              </ol>
+                                <h4>Travel Requirements</h4>
+                                <p>Passengers travelling to Mauritius will have to fulfil all travel exigencies before their flight. All passengers travelling to Mauritius
+                                  must possess the following documents:</p>
+                                  <ul>
+                                     <li>A valid air ticket to Mauritius. It is important that you provide your email address and mobile number for us to communicate with you.</li>
+                                     <li>Prior to travel, it is recommended for all travelers to fill out the digital ALL IN ONE FORM. It will generate a PDF document with a QR Code,
+                                         which must be presented to Health Officials on arrival at Mauritius Airport. At the moment, you also need to fill out the Immigration Disembarkation Card,
+                                        which will be handed to you during your flight to Mauritius. Please submit this to the Immigration Officials on arrival at Mauritius Airport.</li>
+                                 </ul>
+                                 <h4>Please check whether you are required to meet other requirements as imposed by your country of departure for travelling to Mauritius.</h4>
+                                 All passengers arriving from France must meet the travel requirements that may be imposed by the French Government listed on the French Ministry of Interior website: https://www.interieur.gouv.fr/covid-19-international-travel#from4a.
+                                 <br>
+                                 A check of the supporting documents, if required, will be made in France before departure. Please note that this does not apply to passengers in transit at Paris Charles de Gaulle Airport.
+                                 <p> </p>
+                                 <h4>Transit through Mauritius</h4>
 
+                                 <p>All passengers should comply with all travel requirements as imposed by the authorities of their final destination.</p>
+                                 
+                                 <h4>Transit through Paris Charles de Gaulle Airport to Mauritius</h4>
+                                 
+                                 <p>If you are transiting through Paris Charles de Gaulle Airport, you must go to the boarding counter as soon as possible (opening 2 hours before flight departure) to check the health formalities to be able to board our flight. Passengers marked "Ready to Fly" on their boarding pass must also present themselves as soon as possible at the boarding counter.</p>
+                                 
+                                <h4>At the airport of departure</h4> 
+                                 <ul>
+                                    <li>With all the health safety and precautionary measures in place, the check-in and boarding processes are expected to take longer. Passengers are therefore advised to arrive at the airport at least three hours prior to their scheduled flight departure time.</li>
+                                 <li>It is mandatory for all passengers to wear only surgical or N95/FFP2 masks. Please ensure that you carry a sufficient number of masks for the entire duration of your flight, from the time you reach the airport of departure to the time you leave SSR international airport. Typically, you should provide for one mask for every 4 hours.</li>
+                                 <li>Passengers will also be subject to temperature checks at the airport.</li>
+                                 </ul>
+                           </div>
+
+                           <button class="travelbtn" type="button">Read More</button>
+                        </div>
+                     </div>
+                     <!-- travelitem end -->
+                     
+                  </div>
+              </div>
+           </div>
+        </div>
+     </section>
+    
+      <!-- read more popup box start -->
+       <div class="popup-box">
+          <div class="popup-content">
+              <div class="popup-header">
+                 <h3></h3>
+                 <span class="popup-close-icon">&times;</span>
+              </div>
+              <div class="popup-body">
+                
+              </div>
+              <div class="popup-footer">
+                <button class="travelbtn popup-close-travelbtn">Close</button>
+              </div>
+          </div>
+       </div>
+      <!-- read more popup box end -->
 
 	<!--Package section--->
 	<section class="accommodation" id="accommodation">
@@ -165,6 +233,40 @@
 
 		</div>
 	</section>
+    <script>
+   
 
+        const servicetravelitems = document.querySelector(".service-travelitems");
+        const popup = document.querySelector(".popup-box")
+        const popupClosetravelbtn = popup.querySelector(".popup-close-travelbtn");
+        const popupCloseIcon = popup.querySelector(".popup-close-icon");
+      
+        servicetravelitems.addEventListener("click",function(event){
+          if(event.target.tagName.toLowerCase() == "button"){
+             const travelitem =event.target.parentElement;
+             const h3 = travelitem.querySelector("h3").innerHTML;
+             const readMoreCont = travelitem.querySelector(".read-more-cont").innerHTML;
+             popup.querySelector("h3").innerHTML = h3;
+             popup.querySelector(".popup-body").innerHTML = readMoreCont;
+             popupBox();
+          }
+      
+        })
+      
+        popupClosetravelbtn.addEventListener("click", popupBox);
+        popupCloseIcon.addEventListener("click", popupBox);
+      
+        popup.addEventListener("click", function(event){
+           if(event.target == popup){
+              popupBox();
+           }
+        })
+      
+        function popupBox(){
+          popup.classList.toggle("open");
+        }
+      
+      
+      </script>
 	</body>
     </html>
