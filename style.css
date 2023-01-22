@@ -33,14 +33,18 @@ nav ul{
 nav ul li{
     display:inline-block;
     margin-right:0px;
-	font-size: 12px;
-	font-weight: bold;
+	  font-size: 12px;
+	  font-weight: bold;
 }
 a{
     text-decoration:none;
     color:#fff;
 }
-
+.menu-icon{
+  width:50px;
+  margin-left: 20px;
+  display:none;
+}
 .container{
     max-width:1300px;
     margin:auto;
@@ -71,8 +75,8 @@ a{
     font-size:50px;
     line-height:60px;
     margin:25px 0;
-	text-align: justify;
-	width: 320px;
+	  text-align: justify;
+	  width: 320px;
 }
 .col-2 p{
 	font-size: 18px;
@@ -166,34 +170,35 @@ aside{
 
 .news-container .carousel-text{
 	position: absolute;
-	color: #fff;
-	font-size: 72px;
+  background-image: linear-gradient(to left, violet, indigo, green, blue, aqua, gold, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 72px;
 	font-weight:light;
 }
 .news-container{
 	margin-top: 10px;
   height: 400px;
-  width: 800px;
   position: relative;
-}
-
-.news-container:hover > a{
-	filter: brightness(0.4);
 }
 
 .news-container video{
   position: absolute;
   object-fit: cover;
-  z-index: 0;
-	height: 400px;
-	width: 1349px;
+  top:0;
+  left: 0;
+	height: 100%;
+	width: 100%;
+  overflow: hidden;
 }
-.news-container p{
-		text-align: left;
-		font-size: 24px;
-		left: 590px;
-		top: 80px;
+
+.news-container:hover{
+filter: brightness(0.7);
 }
+
 
 /* sponsors */
 
@@ -1057,31 +1062,13 @@ visibility: visible;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Home*/  
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1000px){
     nav ul{
         position:absolute;
         top:70px;
         left:0;
-        background:#333;
+        background:black;
         width:100%;
         overflow:hidden;
         transition: max-height 0.5s;
@@ -1098,9 +1085,10 @@ visibility: visible;
     .menu-icon{
         display:block;
         cursor:pointer;
-    }
+    } 
 
-}
+  }
+
 
 
 @media only screen and (max-width: 600px) {
@@ -1140,6 +1128,7 @@ visibility: visible;
 		z-index: 16;
 	}
 }
+
 
 /*Previous Conference*/
 @media only screen and (max-width: 769px){
