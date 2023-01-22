@@ -32,6 +32,7 @@
 
                     </ul>
                 </nav>
+                <img src="images/menu.jpg" class="menu-icon" onclick="menutoggle()">
 
             </div>
         </div>
@@ -103,6 +104,18 @@
 
         <!--===== MAIN JS =====-->
         <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
             /*===== LOGIN SHOW and HIDDEN =====*/
 const signUp = document.getElementById('sign-up'),
     signIn = document.getElementById('sign-in'),
