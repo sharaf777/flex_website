@@ -18,7 +18,7 @@
    </style>
 <body>
 	<!--header--->
-    <div class="header" style="background: black;">
+    <div class="header" style="background:rgb(0,88,138);">
         <div class="container">
 
             <div class="navbar">
@@ -36,7 +36,7 @@
 
                     </ul>
                 </nav>
-
+                <img src="images/menu.jpg" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
     </div>
@@ -204,7 +204,7 @@
 
 		<div class="destination-content">
 			<div class="col-content">
-				<a href="" target="_blank"><img src="images/dest1.jpg"></a>
+				<a href="https://mauritiusattractions.com/mauritius-national-botanical-garden-p-63.html" target="_blank"><img src="images/dest1.jpg"></a>
 				<h5>Mauritius National Botanical Garden<br>PAMPLEMOUSSES</h5>
 				<p>LEARN MORE &#8594;</p>
 			</div>
@@ -231,7 +231,18 @@
 		</div>
 	</section>
     <script>
-   
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="600px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
 
         const servicetravelitems = document.querySelector(".service-travelitems");
         const popup = document.querySelector(".popup-box")
@@ -263,7 +274,7 @@
           popup.classList.toggle("open");
         }
       
-      
+
       </script>
 	</body>
     </html>

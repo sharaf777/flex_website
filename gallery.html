@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div class="header" style="background: black;">
+  <div class="header" style="background: #e08b6c;">
     <div class="container">
         <div class="navbar">
             <nav>
@@ -22,6 +22,8 @@
                     <li><a class="nav-link" href="account.html">Login/Sign Up</a></li>							
                 </ul>
             </nav>
+					<img src="images/menu.jpg" class="menu-icon" onclick="menutoggle()">
+
         </div>
     </div>
 </div>
@@ -59,12 +61,20 @@
             
       </div>
     </div>
-
-
-
-
-
   </div>
+<script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
 
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="600px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+</script>
 </body>
 </html>
