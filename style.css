@@ -3,6 +3,7 @@ body{
 	margin: 0;
 	box-sizing:border-box;
 }
+
 /*Header*/
 
 .box{
@@ -55,6 +56,24 @@ a{
     border:0;
     outline:none;
     color:#000;
+}
+.breaking-news-section{
+	padding: 0 30px 0 60px;
+	display: flex;
+}
+.breaking-news{
+	padding: 30px;
+	color: black;
+	text-decoration: none;	
+}
+.breaking-news:hover{
+	color:#e08b6c;
+}
+.bntime{
+	display: inline-block;
+	color: white;
+	padding: 0 10px;
+	font-size: 16px;
 }
 .row{
     display: flex;
@@ -433,13 +452,13 @@ filter: brightness(0.7);
   .hiddentxt {
 	font-weight: bold;
 	color: #F00;
-	z-index:99;
+	z-index:-1;
   }
   
   .hiddentxt a {
 	color: #F00;
 	text-decoration: none;
-	z-index: 99;
+	z-index: -1;
   }
   
   .hiddenclick {
@@ -462,7 +481,7 @@ filter: brightness(0.7);
   .hiddentxt:hover ~ .hiddenimg {
 	display: block;
 	position: absolute;
-	  z-index: 2
+	z-index: 2;
   }
   
   .hiddenclickimg {
@@ -1072,6 +1091,7 @@ visibility: visible;
         width:100%;
         overflow:hidden;
         transition: max-height 0.5s;
+        z-index: 4;
     }
     nav ul li{
         display:block;
