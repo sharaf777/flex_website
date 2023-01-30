@@ -834,18 +834,18 @@ filter: brightness(0.7);
 :root{
 	--bg-color: #fff;
 	--text-color: #221314;
-	--second-color: #5a7184;
+	--second-color: rgb(84, 198, 211);
 	--main-color: #6e54fa;
 	--big-font: 6rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
 }
 #travel{
-  background-color: rgb(84, 198, 211);
+  background-color: var(--second-color);
 }
 
 #destination{
-  background-color: rgb(84, 198, 211);
+  background-color: var(--second-color);
 }
 
 section{
